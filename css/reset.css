@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+#menu1 {
+    /*width:500px;
+    height:50px;
+    outline:1px dotted red;*/
+    background: #98E0AD;
+}
+
+#menu ul{
+    width:500px;
+    margin:0 auto;
+    overflow : hidden;
+}
+
+#menu1 ul li{
+    float : left;
+    width:25%;
+    height:100%;
+    line-height:50px;
+    text-align: center;
+    background:#98E0AD;
+}
+
+#menu1 ul li a {
+    display : block;
+}
+
+#menu1 ul li a:hover{
+    background:#138535;
+    color:#fff;
+}

@@ -1,0 +1,313 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>백신_1</title>
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'css/style1.css' %}">
+
+
+
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="./">
+                <div class="sidebar-brand-icon rotate-n-15">
+                </div>
+                <div class="sidebar-brand-text mx-3", style="font-size:30px">COVID-19</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                LIST
+            </div>
+
+            <!-- Nav Item - 바로알기 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_1"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16" style="margin-top: 18px; margin-left:20px">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    <span style="margin-left: 30px;">바로알기</span>
+                </a>
+                <div id="collapse_1" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded" >
+                        <a class="collapse-item" href="baro1">코로나19란?</a>
+                        <a class="collapse-item" href="baro2">대한민국 방역체계</a>
+                        <a class="collapse-item" href="baro3">환자치료 및 관리</a>
+                        <a class="collapse-item" href="baro4">예방 조치 안내</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - 발생동향 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_2"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16" style="margin-top: 18px; margin-left:20px">
+                        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    <span style="margin-left: 30px;">발생동향</span>
+                </a>
+                <div id="collapse_2" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="movement1">국내 발생 현황</a>
+                        <a class="collapse-item" href="movement2">국외 발생 현황</a>
+                        <a class="collapse-item" href="movement3">시도별 발생동향</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- 구분선 -->
+            <!--<hr class="sidebar-divider">-->
+
+            <!-- Nav Item - 코로나19 백신 -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_3"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eyedropper" viewBox="0 0 16 16" style="margin-top: 18px; margin-left:20px">
+                        <path d="M13.354.646a1.207 1.207 0 0 0-1.708 0L8.5 3.793l-.646-.647a.5.5 0 1 0-.708.708L8.293 5l-7.147 7.146A.5.5 0 0 0 1 12.5v1.793l-.854.853a.5.5 0 1 0 .708.707L1.707 15H3.5a.5.5 0 0 0 .354-.146L11 7.707l1.146 1.147a.5.5 0 0 0 .708-.708l-.647-.646 3.147-3.146a1.207 1.207 0 0 0 0-1.708l-2-2zM2 12.707l7-7L10.293 7l-7 7H2v-1.293z"/>
+                        </svg>
+                    <span style="margin-left: 30px;">백신</span>
+                </a>
+                <div id="collapse_3" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <a class="collapse-item" href="#">백신의 필요성</a> <!--https://ncv.kdca.go.kr/menu.es?mid=a10116020000 처럼 3개 나뉘어서 해야함-->
+                        <a class="collapse-item" href="vaccine2">백신의 종류 및 특성</a>
+                        <a class="collapse-item" href="vaccine3">이상반응</a>
+                    </div>
+                </div>
+            </li>
+
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapse_4"
+                    aria-expanded="true" aria-controls="collapsePages2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-plus" viewBox="0 0 16 16" style="margin-top: 18px; margin-left:20px">
+                        <path d="M5.338 1.59a61.44 61.44 0 0 0-2.837.856.481.481 0 0 0-.328.39c-.554 4.157.726 7.19 2.253 9.188a10.725 10.725 0 0 0 2.287 2.233c.346.244.652.42.893.533.12.057.218.095.293.118a.55.55 0 0 0 .101.025.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067c-.53 0-1.552.223-2.662.524zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+                        <path d="M8 4.5a.5.5 0 0 1 .5.5v1.5H10a.5.5 0 0 1 0 1H8.5V9a.5.5 0 0 1-1 0V7.5H6a.5.5 0 0 1 0-1h1.5V5a.5.5 0 0 1 .5-.5z"/>
+                        </svg>
+                    <span style="margin-left: 30px;">마스크 착용</span></a>
+                    <div id="collapse_4" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
+                        <div class="bg-white py-2 collapse-inner rounded">
+                            <a class="collapse-item" href="mask1">마스크 착용법</a>
+                            <a class="collapse-item" href="mask2">시도별 행정명령</a>
+                        </div>
+                    </div>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="선별진료소.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16" style="margin-top: 18px; margin-left:20px">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                        </svg>
+                    <span style="margin-left: 30px;">선별진료소</span></a>
+            </li>
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <h1 class="h3 mb-0 text-gray-800" style="padding: 21px; background-color: white; ">백신의 필요성</h1>
+
+                <div id="content" style="padding:50px 0px 50px 50px; width:90%; color:rgb(41,41,41);"><!-- main_container -->
+                    <div id="menu1">
+                        <ul>
+                            <li><a href="#">코로나19 예방접종은 어떻게 우리 몸을 보호할까요?</a></li>
+                            <li><a href="vaccine1_2">코로나19 예방접종은 효과가 있나요?</a></li>
+                            <li><a href="vaccine1_3">코로나19 예방접종만으로 코로나19를 예방할 수 있나요?</a></li>
+                        </ul>
+                    </div>
+            
+                    <br><br><br><br><br>
+            
+                    <div>
+                        <h2>&nbsp코로나19 예방접종의 작용기전</h2><br>
+                        <ul>
+                            <li>○ 예방접종은 인체의 면역 체계를 훈련시켜 코로나19 바이러스를 인식하고 제거하도록 합니다.</li>
+                            <li>○ 예방접종은 우리 몸이 코로나19에 걸리지 않고 면역을 획득할 수 있는 안전한 방법입니다.</li>
+                            <li>○ 다양한 종류의 백신이 있지만, 모든 백신은 결국 우리 몸의 면역세포가 바이러스를 구성하는 일부 단백질 부분을 인식하고 반응하여 항체를 만들어 내고, 면역 세포 중 일부는 기억 세포로 남습니다.</li>
+                            <li>○ 이후 인체에 코로나19 바이러스가 침입했을 때 활성화되어 바이러스나 바이러스에 감염된 세포를 제거합니다.</li>
+                            <li>○ 이러한 기전으로 코로나19 예방접종은 코로나19 감염의 위험을 줄여주고, 중증 환자발생이나 사망을 예방합니다.</li>
+                            <li>○ 예방접종 후 면역을 획득하기까지 통상 2주 이상이 소요되므로 예방접종 직후에는 코로나19 바이러스에 노출되어 코로나바이러스감염증-19에 걸릴 수 있습니다.</li>
+                            <li>○ 예방접종 후에 면역 형성과정에서 발열, 피로, 두통, 근육통, 메스꺼움ㆍ구토 증상이 나타날 수 있으나, 이는 정상 반응으로 볼 수 있습니다. 대부분 3일 이내에 증상이 사라지게 됩니다.</li>
+                        </ul>
+                    </div>
+                    
+                    <br><br><br>
+            
+                    <div>
+                        <h2>&nbsp코로나19 백신의 종류</h2><br>
+                        <ul>
+                            <li>○ 현재 여러 가지 종류의 백신이 개발되었거나 개발 중에 있습니다.</li>
+                            <li>○ 대부분의 코로나19 백신은 코로나바이러스의 ‘스파이크’ 단백질을 이용해 면역반응을 일으킵니다.</li>
+                            <li>○ 우리 몸의 면역체계가 코로나바이러스의 스파이크 단백질을 이물질로 인식하여 오래 지속되는 면역 세포와 항체를 만들어 냅니다.</li>
+                            <li>○ 이러한 기전으로 코로나19 예방접종은 코로나19 감염의 위험을 줄여주고, 중증 환자발생이나 사망을 예방합니다.</li>
+                            <li>○ 예방접종을 완료하고 면역이 형성된 이후 코로나바이러스에 노출되면, 우리 몸은 더 빠르고 더 나은 반응을 일으켜 코로나바이러스감염증-19로부터 우리몸을 보호합니다.</li>
+                            <li>○ 현재까지 개발되거나 곧 개발될 코로나19 백신은 크게 3가지 종류로 나눠집니다.</li>
+                        </ul>
+                    </div>
+            
+                    <br><br><br>
+            
+            
+                    <div>
+                        <table border ="1" width="50%" height=200 bgcolor="gray" bordercolor="white" cellspacing="5">
+                            <tr align="center" bgcolor="white">
+                                <td colspan="4">
+                                    mRNA백신(핵산백신)
+                                </td>
+                              </tr>
+                            <tr bgcolor="white">
+                              <td colspan="4">
+                                <ul>
+                                    <br>
+                                    <li>- mRNA백신은 코로나바이러스 특이 스파이크 단백질을 만드는 유전자를 RNA형태로 만들어 우리 몸에 투여하는 백신입니다.</li><br>
+                                    <li>- 인체에 주입된 mRNA는 우리 몸의 세포에서 코로나바이러스 특이 스파이크 단백질을 만들게 됩니다.</li><br>
+                                    <li>- 우리 몸은 만들어진 스파이크 단백질을 이물질로 인식해서 면역반응을 일으키게 되고, 코로나19 바이러스에 대항하는 면역을 획득하게 됩니다.</li><br>
+                                    <li>- 주입한 mRNA 백신의 유전물질은 분해되므로, 인체의 DNA와 상호작용하지 않습니다.</li><br>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+                          
+                          <br><br>
+                          
+                          <table border ="1" width="50%" height=200 bgcolor="gray" bordercolor="white" cellspacing="5">
+                            <tr align="center" bgcolor="white">
+                                <td colspan="4">
+                                    재조합백신
+                                </td>
+                              </tr>
+                            <tr bgcolor="white">
+                              <td colspan="4">
+                                <ul>
+                                    <br>
+                                    <li>- 재조합백신은 코로나19 바이러스의 무해한 단백질 항원(주로 스파이크 단백질)을 포함하고 있습니다.</li><br>
+                                    <li>- 예방접종을 하면, 인체의 면역체계는 단백질 항원을 이물질로 인식하여 면역반응을 일으키게 되고, 코로나19 바이러스에 대항하는 면역을 획득하게 됩니다.</li><br>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+            
+                          <br><br>
+            
+                          <table border ="1" width="50%" height=200 bgcolor="gray" bordercolor="white" cellspacing="5">
+                            <tr align="center" bgcolor="white">
+                                <td colspan="4">
+                                    바이러스벡터 백신
+                                </td>
+                              </tr>
+                            <tr bgcolor="white">
+                              <td colspan="4">
+                                <ul>
+                                    <br>
+                                    <li>- 바이러스벡터 백신은 코로나19 바이러스 특이 단백질(주로 스파이크 단백질)의 유전 물질을 포함한 바이러스로 만들어 집니다.</li><br>
+                                    <li>- 이때 사용되는 바이러스는 코로나19 바이러스와는 다른 바이러스로, 약독화된 바이러스를 사용하므로 인체에는 무해합니다.</li><br>
+                                    <li>- 코로나19 바이러스 특이 단백질의 유전물질을 포함한 벡터 바이러스가 인체에 들어오면, 코로나19 바이러스 특이 단백질인 스파이크 단백질이 우리 몸에서 만들어집니다.</li><br>
+                                    <li>- 우리 몸은 만들어진 스파이크 단백질을 이물질로 인식해서 면역반응을 일으키게 되고, 코로나19 바이러스에 대항하는 면역을 획득하게 됩니다.</li><br>
+                                </ul>
+                              </td>
+                            </tr>
+                          </table>
+                    </div>
+                </div>
+
+
+
+
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+
+                <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                <div class="copyright text-center my-auto">
+                <span>Copyright &copy; Your Website 2020</span>
+                </div>
+                </div>
+                </footer>
+                <!-- End of Footer -->
+        
+                </div>
+                <!-- End of Content Wrapper -->
+        
+                </div>
+                <!-- End of Page Wrapper -->
+        
+                <!-- Scroll to Top Button-->
+                <a class="scroll-to-top rounded" href="#page-top">
+                <i class="fas fa-angle-up"></i>
+                </a>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+</body>
+
+</html>

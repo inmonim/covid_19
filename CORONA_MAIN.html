@@ -1,0 +1,951 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<title>코로나바이러스감염증-19 &gt; 바로알기 &gt; 코로나19 란?</title>
+<meta name="description" content="코로나바이러스감염증-19,바로알기, 코로나19란?">
+<meta property="og:description" content="코로나바이러스감염증-19,바로알기, 코로나19란?">
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta name="author" content="보건복지부, 코로나바이러스감염증-19(COVID-19), 질병관리청">     
+<meta name="keywords" content="코로나바이러스감염증-19(COVID-19), 코로나바이러스감염증-19, 코로나바이러스, 보건복지부"> 
+<meta name="copyright" content="보건복지부">
+
+<meta property="og:url" content="http://ncov.mohw.go.kr/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="코로나바이러스감염증-19(COVID-19)">
+<meta property="og:locale" content="ko">
+<meta property="og:title" content="코로나바이러스감염증-19(COVID-19)">
+<meta property="og:image" content="http://ncov.mohw.go.kr/static/image/header/homeimg_new.jpg"> 
+    
+<link rel="icon" type="image/png" sizes="64x64" href="/static/image/header/ROK.png">
+<link rel="stylesheet" href="/static/css/co_common.css?ver=2022021501">
+<link rel="stylesheet" href="/static/css/co_component.css?ver=20211101">
+<link rel="stylesheet" href="/static/css/lightslider.min.css">
+
+<script src="/static/js/jquery-1.11.2.min.js"></script>
+<script src="/static/js/lightslider.min.js"></script>
+<script src="/static/js/co_common.js?ver=20211223"></script>
+
+<script type="text/javaScript" language="javascript">
+
+function fn_goMenu(url, brd_id, brd_gubun, data_Gubun){
+    
+    $("#brdId").val(brd_id);
+    $("#brdGubun").val(brd_gubun);
+    $("#dataGubun").val(data_Gubun);
+
+    var frm = $("#menuFrm");
+    frm.attr("action", url);
+    frm.submit();
+}
+
+function fn_boardView(url, brdId, brdGubun, ncvContSeq, board_id, dataGubun){
+    $("#brdId").val(brdId);
+    $("#brdGubun").val(brdGubun);
+    $("#ncvContSeq").val(ncvContSeq);
+    $("#contSeq").val(ncvContSeq);
+    $("#board_id").val(board_id);
+    $("#dataGubun").val(dataGubun);
+
+    var frm = $("#menuFrm");
+    frm.attr("action", url);
+    frm.submit();
+}
+
+function fn_tcm_boardView(url, brdId, brdGubun, ncvContSeq, board_id, gubun){
+    
+    $("#brdId").val(brdId);
+    $("#brdGubun").val(brdGubun);
+    $("#ncvContSeq").val(ncvContSeq);
+    $("#contSeq").val(ncvContSeq);
+    $("#board_id").val(board_id);
+    $("#gubun").val(gubun);
+    
+    var frm = $("#menuFrm");
+    frm.attr("action", url);
+    frm.submit();
+    
+}
+
+function search( where ){
+    var thisForm = $("#"+ where);
+    var thisSearch = $(thisForm).find(".searchTerm");
+    var cont = "";
+    $(thisSearch).each(function() {
+        cont += $(this).val();
+    });
+    
+    //특수문자 체크
+    if (containsChars(cont,"~!@#$%^&*()+|`=\\[]{};:'\".<>/?")) {
+        alert("특수문자는 제외하고 검색해주시기 바랍니다.");
+        $(thisSearch).val("");
+        event.preventDefault();
+        return false;
+    }else if ( cont == "" || cont == null || cont == undefined){
+        alert("검색어를 입력하세요");
+        $(thisSearch).focus();
+        event.preventDefault();
+        return false;
+    }
+    
+    return true;        
+}
+</script>
+
+    <link rel="stylesheet" href="/static/css/chart_kr.css?ver=20211101">
+    <script src="/static/js/Chart.min.js"></script>
+    <script src="/static/js/chartjs-plugin-datalabels.min.js"></script>
+    <script src="/static/js/chart_kr.js?ver=20211101"></script>
+</head>
+
+<body>
+
+<form name="menuFrm" id="menuFrm" method="get">
+    <input name="brdId" id="brdId" type="hidden" />
+    <input name="brdGubun" id="brdGubun" type="hidden" />
+    <input name="dataGubun" id="dataGubun" type="hidden" />
+    <input name="ncvContSeq" id="ncvContSeq" type="hidden" />
+    <input name="contSeq" id="contSeq" type="hidden" />
+    <input name="board_id" id="board_id" type="hidden" />
+    <input name="gubun" id="gubun" type="hidden" />
+</form>
+
+
+<ul class="top_skipmenu">
+    <li><a href="#content">본문 바로가기</a></li>
+    <li><a href="#gnb">메뉴 바로가기</a></li>
+</ul>
+<div class="wrap nj">
+
+        <div class="w_catch">
+            <div class="wc_p t_dp_n m_dp_n"><span class="hdn">너비 1180px 이상</span></div>
+            <div class="wc_t p_dp_n m_dp_n"><span class="hdn">너비 768px - 1179px</span></div>
+            <div class="wc_m p_dp_n t_dp_n"><span class="hdn">너비 767px 이하</span></div>
+        </div>
+
+        <div class="navigation t_dp_n m_dp_n">
+            <div>
+                <div class="n_left"><h1 class="corona_h1"><a href="/">코로나바이러스감염증-19<span>(COVID-19)</span></a></h1></div>
+                <div class="n_right">
+                    <ul class="shim">
+                        <li><a href="https://ncv.kdca.go.kr" target="_blank" title="새창">코로나19 예방접종</a></li>
+                        <li><a href="http://www.mohw.go.kr/" target="_blank" title="새창">중앙사고수습본부</a></li>
+                        <li><a href="http://www.kdca.go.kr/" target="_blank" title="새창">중앙방역대책본부</a></li>
+                    </ul>
+                    <ul class="sns">
+                        <li class="facebook"><a href="http://www.facebook.com/koreadca" target="_blank" title="질병관리청 페이스북으로 새창">페이스북</a></li>
+                        <li class="youtube"><a href="https://youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank" title="질병관리청 유튜브 새창">유튜브</a></li>
+                        <li class="post"><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank" title="질병관리청 포스트 새창">포스트</a></li>
+                        <li class="twitter"><a href="http://twitter.com/koreadca" target="_blank" title="질병관리청 트위터 새창">트위터</a></li>
+                    </ul>                   
+                    <ul class="country">
+                         <li><a href="/en/" target="_blank" title="새창">English</a></li> 
+                        <li><a href="/cn/" target="_blank" title="새창">中文</a></li> 
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div id="header" class="header">
+            <div>
+                <div class="h_left">
+                    <h1 class="logo"><a href="/">코로나바이러스감염증-19<span>(COVID-19)</span></a></h1>
+                    <div class="t_top_other">
+                        <ul class="t_sns">
+                            <li class="facebook"><a href="http://www.facebook.com/koreadca" target="_blank" title="질병관리청 페이스북으로 새창">페이스북</a></li>
+                            <li class="youtube"><a href="https://youtube.com/channel/UCa7-3Zvxg-5Rfxgu3RQY_gw" target="_blank" title="질병관리청 유튜브 새창">유튜브</a></li>
+                            <li class="post"><a href="https://post.naver.com/my.nhn?memberNo=20182790" target="_blank" title="질병관리청 포스트 새창">포스트</a></li>
+                            <li class="twitter"><a href="http://twitter.com/koreadca" target="_blank" title="질병관리청 트위터 새창">트위터</a></li>
+                        </ul>
+                        <ul class="t_camp">
+                            <li><a href="https://ncv.kdca.go.kr" target="_blank" title="새창">코로나19 예방접종</a></li>
+                            <li><a href="http://www.mohw.go.kr/" target="_blank" title="새창">중앙사고수습본부</a></li>
+                            <li><a href="http://www.kdca.go.kr/" target="_blank" title="새창">중앙방역대책본부</a></li>
+                        </ul>                       
+                        <ul class="t_country">
+                            <li><a href="/en/" target="_blank" title="새창">English</a></li>
+                            <li><a href="/cn/" target="_blank" title="새창">中文</a></li> 
+                        </ul>
+                    </div>                      
+                </div>
+                <div class="h_right">
+                    <div id="gnb" class="gnb subfix t_dp_n m_dp_n">
+                        <ul>
+                            <li  class="on"><a href="/baroView.do?brdId=4&brdGubun=41">바로알기</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li class="on"><a href="/baroView.do?brdId=4&brdGubun=41">코로나19 란? </a></li>
+                                        <li ><a href="/baroView2.do?brdId=4&brdGubun=42">대한민국 방역체계</a></li>
+                                        <li ><a href="/baroView3.do?brdId=4&brdGubun=43">환자치료 및 관리</a></li>
+                                        <li ><a href="/baroView4.do?brdId=4&brdGubun=44">예방 조치 안내</a></li>                                        
+                                    </ul>
+                                </div></div>                            
+                            </li>
+                            <li ><a href="/bdBoardList.do?brdId=1&brdGubun=11">발생동향</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=11">국내 발생 현황</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=14">국외 발생 현황</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=13">시도별 발생동향</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=12">확진환자 이동경로</a></li>
+                                    </ul>
+                                </div></div>                             
+                            </li>
+                            <li ><a href="/tcmBoardList.do?brdId=3&brdGubun=">뉴스 & 이슈</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li ><a href="/tcmBoardList.do?brdId=3&brdGubun=">보도자료</a></li>
+                                        <li ><a href="/factBoardList.do?brdId=3&brdGubun=33">코로나19 팩트 & 이슈체크</a></li>
+                                        <li ><a href="/lastBannerList.do?brdId=3&brdGubun=39">일별 브리핑 이슈 모아보기</a></li>
+                                                                                
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li ><a href="/infoBoardList.do?brdId=3&brdGubun=32">홍보자료 & FAQ</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li ><a href="/infoBoardList.do?brdId=3&brdGubun=32">홍보자료</a></li>
+                                        <li ><a href="/faqBoardList.do?brdId=3&brdGubun=38">FAQ</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=51">피해지원정책</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=51">일반인(대국민)</a></li>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=52">취약계층</a></li>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=53">소상공인 및 기업</a></li>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=54">의료기관</a> </li>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=55">발생지역</a></li>
+                                        <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=56">기타</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>                            
+                            <li ><a href="/duBoardList.do?brdId=2&brdGubun=21">공지사항</a>
+                                <div class="g_fixsub"><div>
+                                    <ul>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=21">일반인</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=23">입국자 및 해외여행객</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=22">자가격리자</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=24">의료기관</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=25">집단 및 다중이용시설</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=28">지자체</a></li>
+                                        <li ><a href="/duBoardList.do?brdId=2&brdGubun=26">기업 및 시장</a></li>
+                                    </ul>
+                                </div></div>
+                            </li>
+                            <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=71">마스크 착용</a>
+                                <div class="g_fixsub">
+                                    <div>
+                                        <ul>
+                                            <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=71">지침·제도</a> </li>
+                                            <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=72">FAQ</a> </li>
+                                            <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=73">홍보자료</a> </li>
+                                            <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=74">시도별 현황</a> </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                            
+                            <li  ><a href="/extendedCareBoardList.jsp?brdId=8&brdGubun=81">코로나19검사&재택치료&치료제</a>
+                            </li>                            
+                        </ul>
+                    </div>
+
+                    <div class="p_search_btn">
+                        <button class="p_open"><span class="hdn">검색영역 열림</span></button>
+                        <button class="p_close"><span  class="hdn">검색영역 닫힘</span></button>
+                    </div>
+
+                    
+                    <div class="p_search">
+                        <form id="searchForm1" name="searchForm" action="/search/search.jsp" method="post">
+                            <input type="hidden" name="pageNum" value="1" />                 <!-- 현재페이지 -->
+                            <input type="hidden" name="searchTab" value="TOTAL" />             <!-- 검색탭 -->
+                            <input type="hidden" name="order" value="weight" />                         <!-- 정렬 -->
+                            <input type="hidden" name="sDate" value="" />                         <!-- 시작일자 -->
+                            <input type="hidden" name="eDate" value="" />                         <!-- 시작일자 -->
+                            <input type="hidden" name="searchRange" value="total" />     <!-- 검색범위 -->
+                            <input type="hidden" name="dateRange" value="all" />             <!-- 등록범위 -->
+                            <div class="n_search">
+                                <label for="searchTermPc123" class="hdn">검색어</label>
+                                <input type="text" name="searchTerm" id="searchTermPc123" class="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+                                <input type="submit" class="btn_search" onClick="search( 'searchForm1' );" title="검색">
+                            </div>
+                        </form> 
+                    </div>
+                    
+                    
+                    <a href="" class="btn_global_search"><span class="hdn">통합검색</span><i></i></a>
+                    <div class="global_search">
+                        <form id="searchForm2" name="searchForm" action="/search/search.jsp" method="post">
+                            <input type="hidden" name="pageNum" value="1" />                 <!-- 현재페이지 -->
+                            <input type="hidden" name="searchTab" value="TOTAL" />             <!-- 검색탭 -->
+                            <input type="hidden" name="order" value="weight" />                         <!-- 정렬 -->
+                            <input type="hidden" name="sDate" value="" />                         <!-- 시작일자 -->
+                            <input type="hidden" name="eDate" value="" />                         <!-- 시작일자 -->
+                            <input type="hidden" name="searchRange" value="total" />     <!-- 검색범위 -->
+                            <input type="hidden" name="dateRange" value="all" />             <!-- 등록범위 -->
+                            <div class="n_search">
+                                <label for="searchTermMobile123" class="hdn">검색어</label>
+                                <input type="text" name="searchTerm" id="searchTermMobile123" class="searchTerm" value=""  placeholder="검색어를 입력하세요."/>
+                                <input type="submit" class="btn_search" onclick="search( 'searchForm2' );" title="검색">
+                            </div>
+                        </form> 
+                        <a href="" class="btn_close"><span class="hdn">통합검색닫기</span></a>
+                    </div>
+                    
+                    <a href="" class="btn_global_menu"><span class="hdn">전체메뉴</span><i></i></a> 
+                </div>
+            </div>
+        </div>
+
+        <div class="global_menu">
+            <div>
+                <div class="gm_title">
+                    <div class="gmt_p">
+                        <span>전체메뉴</span>
+                    </div>
+                    <div class="gmt_tm">
+                        <div class="gmtt_b">
+                            <div class="gmt_site">
+                                <ul>
+                                    <li><a href="/">홈</a></li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+                <div class="gm_content">
+                    <div>
+                        <ul>
+                            <li   class="open" ><a class="gmc_title">바로알기</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  class="on"><a href="/baroView.do?brdId=4&brdGubun=41">코로나19 란? </a></li>
+                                        <li ><a href="/baroView2.do?brdId=4&brdGubun=42">대한민국 방역체계</a></li>
+                                        <li ><a href="/baroView3.do?brdId=4&brdGubun=43">환자치료 및 관리</a></li>
+                                        <li ><a href="/baroView4.do?brdId=4&brdGubun=44">예방 조치 안내</a></li>
+                                    </ul>                               
+                                </div>                             
+                            </li>
+                            <li   ><a class="gmc_title">발생동향</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=11">국내 발생 현황</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=14">국외 발생 현황</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=13">시도별 발생동향</a></li>
+                                        <li ><a href="/bdBoardList.do?brdId=1&brdGubun=12">확진환자 이동경로</a></li>
+                                    </ul>                               
+                                </div>                            
+                            </li>                            
+                            <li  ><a class="gmc_title">뉴스 & 이슈</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/tcmBoardList.do?brdId=3&brdGubun=">보도자료</a></li>
+                                        <li  ><a href="/factBoardList.do?brdId=3&brdGubun=33">코로나19 팩트 & 이슈체크</a></li>
+                                        <li  ><a href="/lastBannerList.do?brdId=3&brdGubun=39">일별 브리핑 이슈 모아보기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li  ><a class="gmc_title">홍보자료 & FAQ</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/infoBoardList.do?brdId=3&brdGubun=32">홍보자료</a></li>                                        
+                                        <li  ><a href="/faqBoardList.do?brdId=3&brdGubun=38">FAQ</a></li>                                        
+                                    </ul>
+                                </div>
+                            </li>                                                                 
+                            <li  ><a href="" class="gmc_title">피해지원정책</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=51">일반인(대국민)</a> </li>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=52">취약계층</a> </li>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=53">소상공인 및 기업</a> </li>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=54">의료기관</a> </li>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=55">발생지역</a> </li>
+                                        <li  ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=56">기타</a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li  ><a href="" class="gmc_title">공지사항</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=21">일반인</a> </li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=23">입국자 및 해외여행객</a> </li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=22">자가격리자</a> </li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=24">의료기관</a> </li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=25">집단 및 다중이용시설</a> </li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=28">지자체</a></li>
+                                        <li  ><a href="/duBoardList.do?brdId=2&brdGubun=26">기업 및 시장</a> </li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                            <li  ><a href="" class="gmc_title">마스크 착용</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=71">지침·제도</a> </li>
+                                        <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=72">FAQ</a> </li>
+                                        <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=73">홍보자료</a> </li>
+                                        <li  ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=74">시도별 현황</a> </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li  ><a href="" class="gmc_title">코로나19검사&재택치료&치료제</a>
+                                <div class="gmc_list">
+                                    <ul>
+                                        <li  ><a href="/extendedCareBoardList.jsp?brdId=8&brdGubun=81">코로나19검사&재택치료&치료제</a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <a href="" class="btn_close"><span class="hdn">전체메뉴닫기</span></a>
+            </div>
+        </div>
+        
+        <div class="subm_fix">
+            <div class="cnt4-3-2 open ">
+                <ul>
+                    <li  class="on"><a href="/baroView.do?brdId=4&brdGubun=41"><span>코로나19 란?</span></a></li>
+                    <li ><a href="/baroView2.do?brdId=4&brdGubun=42"><span>대한민국 방역체계</span></a></li>
+                    <li ><a href="/baroView3.do?brdId=4&brdGubun=43"><span>환자치료 및 관리</span></a></li>
+                    <li ><a href="/baroView4.do?brdId=4&brdGubun=44"><span>예방 조치 안내</span></a></li>
+                </ul>
+            </div>
+            <div class="cnt4-3-2  ">
+                <ul>
+                    <li ><a href="/bdBoardList.do?brdId=1&brdGubun=11"><span>국내 발생 현황</span></a></li>
+                    <li ><a href="/bdBoardList.do?brdId=1&brdGubun=14"><span>국외 발생 현황</span></a></li>
+                    <li ><a href="/bdBoardList.do?brdId=1&brdGubun=13"><span>시도별 발생동향</span></a></li>
+                    <li ><a href="/bdBoardList.do?brdId=1&brdGubun=12"><span>확진환자 이동경로</span></a></li>
+                </ul>
+            </div>
+            <div class="cnt4-2-1  ">
+                <ul>
+                    <li ><a href="/tcmBoardList.do?brdId=3&brdGubun="><span>보도자료</span></a></li>
+                    <li ><a href="/factBoardList.do?brdId=3&brdGubun=33"><span>코로나19 팩트 & 이슈체크</span></a></li>
+                    <li ><a href="/lastBannerList.do?brdId=3&brdGubun=39"><span>일별 브리핑 이슈 모아보기</span></a></li>
+                </ul>
+            </div>
+            <div class="cnt2-2-2  ">
+                <ul>
+                    <li ><a href="/infoBoardList.do?brdId=3&brdGubun=32"><span>홍보자료</span></a></li>                                        
+                    <li ><a href="/faqBoardList.do?brdId=3&brdGubun=38"><span>FAQ</span></a></li> 
+                </ul>
+            </div>
+            <div class="cnt3-3-2  ">
+                <ul>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=51"><span>일반인(대국민)</span></a> </li>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=52"><span>취약계층</span></a> </li>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=53"><span>소상공인 및 기업</span></a> </li>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=54"><span>의료기관</span></a> </li>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=55"><span>발생지역</span></a> </li>
+                    <li ><a href="/supportPolicyBoardList.do?brdId=5&brdGubun=56"><span>기타</span></a> </li>
+                </ul>
+            </div>
+            <div class="cnt3-3-2  ">
+                <ul>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=21"><span>일반인</span></a> </li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=23"><span>입국자 및 해외여행객</span></a> </li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=22"><span>자가격리자</span></a> </li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=24"><span>의료기관</span></a> </li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=25"><span>집단 및 다중이용시설</span></a> </li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=28"><span>지자체</span></a></li>
+                    <li ><a href="/duBoardList.do?brdId=2&brdGubun=26"><span>기업 및 시장</span></a> </li>
+                </ul>
+            </div>
+            <div class="cnt3-3-2  ">
+                <ul>
+                    <li ><a href="/socdisBoardView.do?brdId=6&brdGubun=1"><span>거리 두기 체계 개요</span></a> </li>
+                    <li ><a href="/socdisBoardList.do?brdId=6&brdGubun=64&dataGubun=641"><span>단계별 실행방안</span></a> </li>  
+                    <li ><a href="/socdisBoardList.do?brdId=6&brdGubun=65&dataGubun=651"><span>주요 시설·활동 조치사항</span></a> </li>
+                    <li ><a href="/regSocdisBoardView.do?brdId=6&brdGubun=68&ncvContSeq=495"><span>지역별 거리 두기 단계 현황</span></a> </li>
+                </ul>
+            </div>
+            <div class="cnt4-4-2  ">
+                <ul>
+                    <li ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=71"><span>지침·제도</span></a> </li>
+                    <li ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=72"><span>FAQ</span></a> </li>
+                    <li ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=73"><span>홍보자료</span></a> </li>
+                    <li ><a href="/maskDutyBoardList.do?brdId=7&brdGubun=74"><span>시도별 현황</span></a> </li>
+                </ul>
+            </div>
+
+        </div>  
+        
+
+<script type="text/javaScript" language="javascript">
+
+function fn_search(pageNo){
+	$("#pageIndex").val(pageNo);
+	fn_submit();
+}
+
+function fn_submit(){
+	var frm = $("#form1");
+	frm.attr("action", "/bdBoardList.do");
+	frm.submit();
+}
+</script>
+
+<form name="form1" id="form1" method="post">
+<input name="pageIndex" id="pageIndex" type="hidden" value="" />
+<input type="hidden" id="ncv_file_seq" name="ncv_file_seq" value="" />
+<input type="hidden" id="file_path" name="file_path" value="" />
+<input type="hidden" id="file_name" name="file_name" value="" />
+
+<input type="hidden" id="brdId" name="brdId" value="4" />
+<input type="hidden" id="brdGubun" name="brdGubun" value="41" />
+
+
+<div class="container"><!-- main_container -->
+			<div>
+				<div id="content" class="content">
+					<div>
+
+                        <div class="sub_top">
+                            <div class="st_navigation">
+                                <ul>
+                                    <li><a href="/"><span class="hdn">홈</span></a></li>
+                                   <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/baroView.do', '', '', '');">바로알기</a></li>
+                                    <li><a href="javascript:void(0);" onclick="javascript:fn_goMenu('/baroView.do', '', '', '');">코로나19 란?</a></li>
+                                </ul>
+                            </div>
+                            <div class="st_title">
+                                <div class="fl_l">
+                                    <h3>코로나19 란?</h3>
+                                </div>
+                            </div>
+                        </div>
+                        
+						<!-- s: content -->
+						<p class="ta_r mgt36">* 현재까지 알려진 정보(2021년 3월 2일 기준) </p>
+                        <h4 class="s_title_1">코로나바이러스감염증-19(COVID-19) 정보</h4>
+						<div class="data_table">
+						  <table>
+						    <caption>
+						      <span class="hdn">코로나바이러스감염증-19 기본정보표 - 병원체, 전파 경로, 잠복기, 진단 기준, 증상, 치료, 치명률, 예방으로 구성</span>
+					        </caption>
+						    <colgroup>
+						      <col style="width:20%" />
+						      <col style="width:80%" />
+					        </colgroup>
+						    <tr>
+						      <th scope="row">병원체</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>Severe Acute Respiratory Syndrome-Coronavirus-2(SARS-CoV-2)</li>
+						        <li>Coronaviridae family, Betacoronavirus genus Sarbecovirus subgenus에 속함</li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">전파 경로</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>주된 전파경로는 감염자의 호흡기 침방울(비말)에 의한 전파</li>
+						        <li>사람 간에 전파되며, 대부분의 감염은 감염자가 기침, 재채기, 말하기, 노래 등을할 때 발생한 호흡기 침방울(비말)을다른사람이 밀접접촉(주로 2m 이내)하여 발생</li>
+						        <li>현재까지 연구결과에 의하면, 비말 이외, 표면접촉*, 공기 등을 통해서도 전파가 가능하나, 공기전파는 의료기관의에어로졸 생성 시술**, 밀폐된공간에서 장시간 호흡기 비말을 만드는환경***등 특정 환경에서 제한적으로 전파되는 것으로 알려짐
+						          <p class="mgt12">* 감염된 사람과의 직접 접촉(악수 등) 또는 매개체(오염된 물품이나 표면)를 만진 후, 손을 씻기 전 눈, 코, 입 등을 만짐으로 바이러스 전파 </p>
+						          <p class="mgt8">** 에어로졸 생성 시술: 기관지 내시경 검사, 객담 유도, 기관삽관, 심폐소생술, 개방된 객담 흡입, 흡입기 등</p>
+						          <p class="mgt8">*** 환기가 부적절하게 이루어진 노래방, 커피숍, 주점, 실내 운동시설 등에서 감염자와 같이있거나 감염자가 떠난 즉시 그 밀폐공간을 방문한 경우</p>
+					            </li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">잠복기</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>1~14일(평균 5~7일)</li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">진단 기준</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>환자 : 임상양상에 관계없이 진단을 위한 검사기준에 따라 코로나19 감염이 확인된 자</li>
+						        <li>진단을 위한 검사 기준
+						          <ul>
+						            <li>코로나19 유전자(PCR) 검출</li>
+						            <li>바이러스 분리</li>
+					              </ul>
+					            </li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">증상</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>주요증상 및 징후
+						          <ul>
+						            <li>- 임상 증상은 무증상, 경증, 중등증, 중증까지 다양</li>
+						            <li>- 주요 증상으로는 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실
+						              <p>- 그 외에 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등이 다양하게 나타남</p>
+					                </li>
+					              </ul>
+					            </li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">치료</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>특이치료제는 없으며 증상에 따른 해열제, 수액공급, 진해제 등 대증치료</li>
+						        <li>호흡 곤란 시 산소를 공급하고 필요한 경우에는 기계호흡이나 체외막 산소공급 등의 처치를 시행</li>
+						        <li>산소 치료가 필요한 환자에서 렘데시비르의 효과가 일부 확인되어 우리나라를 포함한 여러 나라에서 긴급 승인이 되었거나, 긴급 승인을 준비 중임특이적인 항바이러스제 없음</li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">치명률</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>전세계 치명률은 지역, 인구집단연령 구조, 감염 상태 및 기타 요인에 의해 0.1~25%로 다양함</li>
+						        <li>전세계 치명률은 0.00%~1.63% (중위값 0.27%)로 보정 후 0.00~1.54%(중위값 0.23%)(Bulletin of the World Health Organization. 2021)(https://www.who.int/bulletin/volumes/99/1/20-265892/en/)</li>
+						        </ul></td>
+					        </tr>
+						    <tr>
+						      <th scope="row">예방</th>
+						      <td class="ta_l"><ul class="s_listin_mdot mgt0">
+						        <li>식약처에서 승인된 코로나19 백신(향후 업데이트 예정)</li>
+						        <li>올바른 손씻기</li>
+						        <li>기침 예절 준수</li>
+						        <li>씻지 않은 손으로 눈, 코, 입 만지지 않기</li>
+						        <li>주위 환경을 자주 소독하고 환기하기</li>
+						        </ul></td>
+					        </tr>
+					      </table>
+						</div>   
+						
+                        <h4 class="s_title_1">코로나 바이러스 분류 및 특성</h4>
+						<h5 class="s_title_in3">개요</h5>
+						<ul class="s_listin_dot">
+                        	<li>코로나 바이러스(CoV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스</li>
+                        </ul>
+                        <h5 class="s_title_in3">분류</h5>
+						<ul class="s_listin_dot">
+                        	<li>코로나 바이러스과에는 4개의 속(알파, 베타, 감마, 델타)이 있음
+                            	<ul class="s_listin_bar">
+                                	<li>알파 &middot; 베타 : 사람과 동물에게 감염</li>
+                                    <li>감마 &middot; 델타 : 동물에게 감염</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h5 class="s_title_in3">형태</h5>
+						<ul class="s_listin_dot">
+                        	<li>형태는 코로나 바이러스의 명명과 같이 전자현미경 관찰시 구형
+                            	<ul class="s_listin_bar">
+                                    <li>외부 spike 단백질이 특징적인 크라운형태</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                        <h5 class="s_title_in3">사람감염 코로나 바이러스</h5>
+						<ul class="s_listin_dot">
+                        	<li>사람감염 코로나 바이러스는 현재까지 6종류가 알려져 있음
+                            	<ul class="s_listin_bar">
+                                	<li>감기를 일으키는 유형(229E, OC43, NL63, HKU1)</li>
+                                    <li>중증폐렴을 일으킬 수 있는 유형(SARS-CoV, MERS-CoV) </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        
+                       <div class="box_gray">                           
+                                <h6 class="s_title_3">코로나 바이러스 분류표</h6>
+                            <div class="data_table tbl_scrl tbl_scrl_m">
+                            <table>
+                                <caption>
+                                    <span class="hdn">코로나 바이러스 분류표 - 속, 사람-코로나 바이러스, 사람 이외에 감염하는 코로나 바이러스로 구성</span>
+                                </caption>
+                                <colgroup>
+                                    <col style="width:20%">
+                                    <col style="width:20%">
+                                    <col style="width:60%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">속(genus) </th>
+                                        <th scope="col">사람-코로나 바이러스</th>
+                                        <th scope="col">사람 이외에 감염하는 코로나 바이러스</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>알파-코로나 바이러스(alphacoronavirus)</td>
+                                        <td>229E, NL63,</td>
+                                        <td class="ta_l">
+                                            돼지 유행성 설사 바이러스(porcine epidemic diarrhea virus : PEDV), 
+                                            (돼지) 전염성 위장염 바이러스 (transmissible gastroenteritis virus : TGEV), 
+                                             개코로나 바이러스(canine coronavirus : CCoV), 고양이 코로나 바이러스
+                                            (feline coronavirus : FCoV), Miniopterus bat(박쥐) coronavirus 1,
+                                            Miniopterus bat(박쥐) coronavirus HKU8, Rhinolophus bat(박쥐) coronavirus HKU2, Scotophilus bat(박쥐) coronavirus 512   
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>베타-코로나 바이러스(betacoronavirus)</td>
+                                        <td>OC43, HKU1, SARS-CoV, MERS-CoV</td>
+                                        <td class="ta_l">
+                                            돼지 혈구 응집성뇌척수염 바이러스(porcine hemagglutinating encephalomyelitis virus : PHEV), 우코로나 바이러스(bovine coronavirus : BCoV), 말코로나 바이러스
+    (equine coronavirus : EqCoV), 쥐코로나 바이러스(murine coronavirus : MuCoV),Tylonycteris bat(박쥐) coronavirus HKU4, Pipistrellus bat(박쥐) coronavirus HKU5,Rousettus bat(박쥐) coronavirus HKU9 
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>감마-코로나 바이러스(gammacoronavirus)</td>
+                                        <td>없음</td>
+                                        <td class="ta_l">새코로나 바이러스(Avian coronavirus),흰색 돌고래(Beluga whale)-코로나 바이러스 SW1 </td>
+                                    </tr>
+                                    <tr>
+                                        <td>델타-코로나 바이러스(deltacoronavirus)</td>
+                                        <td>없음</td>
+                                        <td class="ta_l">제주직박구리(Bulbul)-코로나 바이러스 HKU11,
+    개똥지빠귀(Thrush)-코로나 바이러스 HKU12,
+    킨바라(Munia)-코로나 바이러스 HKU13 </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </div>
+                            <p class="n_descript">* 포유류, 조류 등 광범위 동물 감염(개, 고양이, 소, 돼지, 말, 닭, 쥐, 박쥐, 돌고래 등) </p>
+                            <p  class="n_descript">* 박쥐 CoV는 알파 CoV 또는 베타 CoV에 속함</p>
+                            <h5 class="s_title_in2">코로나 바이러스 전자현미경 형태</h5>
+                            <div class="image_list cnt3-3-1 img_ratio">
+                                <ul>
+                                    <li>
+                                        <div>
+                                            <div class="il_img">
+                                                <img class="ir_169" src="../static/image/content/co_img_01.png" alt="MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC)">
+                                            </div>
+                                            <div class="il_descript">
+                                                <span class="il_ttl">MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC)</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="il_img">
+                                                <img class="ir_169" src="../static/image/content/co_img_02.png" alt="MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC)">
+                                            </div>
+                                            <div class="il_descript">
+                                                <span class="il_ttl">MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC)</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <div class="il_img">
+                                                <img class="ir_169" src="../static/image/content/co_img_03.png" alt="SARS-CoV(N Engl J Med. 2003; 348(20):1948-51)">
+                                            </div>
+                                            <div class="il_descript">
+                                                <span class="il_ttl">SARS-CoV(N Engl J Med. 2003; 348(20):1948-51)</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- 공공누리 표시 -->
+						
+
+
+
+
+
+	
+		
+	
+	
+	
+	
+	
+	
+	
+			
+			
+	
+	
+	
+
+
+<div class="copykogl
+	
+		 type1
+		
+		
+		
+		
+	">
+	<div class="copyimg">
+		
+			<span class="hdn">공공누리 제1유형</span>
+			
+			
+			
+			
+			
+	</div>
+	<p class="copytext">
+		<strong>"코로나19란?"</strong> 
+		저작물은
+		
+			 공공누리의 <strong>제1유형 (출처표시, 상업적 이용가능, 변경 가능)</strong>
+			
+			
+			
+			
+		
+		
+			
+			
+				에 따라 이용할 수 있습니다.<br />
+				텍스트 데이터는 공공누리 유형조건에 따라 자유이용이 가능합니다. 단, 사진, 이미지, 일러스트, 동영상 등의 일부 자료는 자유롭게 이용하기 위해서는 반드시 해당 저작권자의 허락을 받으셔야 합니다.
+			
+		
+	</p>
+</div>  
+                        
+                        
+                        <!-- e: content -->
+
+                        
+                        </div>
+                    </div>
+                  </div>
+                        
+	</div>
+</form>
+
+
+
+
+
+		<div class="footer">
+            <div class="f_top">
+                <div>
+                    <div class="ft_left">
+                        <div class="f_relate">
+                             <ul>
+                                <li>
+                                    <a href="#none"><span>질병관리청 관련기관 </span><em>바로가기</em></a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="http://www.kdca.go.kr" target="_blank" rel="noopener noreferrer" title="질병관리청  [새창]">질병관리청</a></li>
+                                            <li><a href="http://www.cdc.gov/" target="_blank" rel="noopener noreferrer" title="미국질병통제예방센터[CDC]  [새창]">미국질병통제예방센터[CDC]</a></li>
+                                            <li><a href="http://www.ecdc.europa.eu/" target="_blank" rel="noopener noreferrer" title="유럽질병통제예방센터[ECDC] [새창]">유럽질병통제예방센터[ECDC]</a></li>
+                                            <li><a href="http://www.who.int/" target="_blank" rel="noopener noreferrer" title="세계보건기구[WHO] [새창]">세계보건기구[WHO]</a></li>
+                                            <li><a href="http://www.nih.go.jp/" target="_blank" rel="noopener noreferrer" title="일본감염병연구소[NIID] [새창]">일본감염병연구소[NIID]</a></li>
+                                            <li><a href="http://www.hpa.org.uk/" target="_blank" rel="noopener noreferrer" title="영국공공보건국[PHE] [새창]">영국공공보건국[PHE]</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>보건환경연구원 </span><em>바로가기</em></a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="http://news.seoul.go.kr/welfare/life_health" target="_blank" rel="noopener noreferrer" title="서울특별시 보건환경연구원 [새창]">서울특별시 보건환경연구원</a></li>
+                                            <li><a href="http://www.busan.go.kr/ihe/index" target="_blank" rel="noopener noreferrer" title="부산광역시 보건환경연구원 [새창]">부산광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.daegu.go.kr/Health/" target="_blank" rel="noopener noreferrer" title="대구광역시 보건환경연구원 [새창]">대구광역시 보건환경연구원</a></li>
+                                            <li><a href="http://ecopia.incheon.go.kr" target="_blank" rel="noopener noreferrer" title="인천광역시 보건환경연구원 [새창]">인천광역시 보건환경연구원</a></li>
+                                            <li><a href="http://hevi.gwangju.go.kr/" target="_blank" rel="noopener noreferrer" title="광주광역시 보건환경연구원 [새창]">광주광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.daejeon.go.kr/hea/index.do" target="_blank" rel="noopener noreferrer" title="대전광역시 보건환경연구원 [새창]">대전광역시 보건환경연구원</a></li>
+                                            <li><a href="http://www.ulsan.go.kr/uihe/index" target="_blank" rel="noopener noreferrer" title="울산광역시 보건환경연구원 [새창]">울산광역시 보건환경연구원</a></li>
+                                            <li><a href="http://gg.go.kr/gg_health" target="_blank" rel="noopener noreferrer" title="경기도 보건환경연구원 [새창]">경기도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gihe.re.kr/" target="_blank" rel="noopener noreferrer" title="강원도 보건환경연구원 [새창]">강원도 보건환경연구원</a></li>
+                                            <li><a href="http://here.cb21.net/" target="_blank" rel="noopener noreferrer" title="충청북도 보건환경연구원 [새창]">충청북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.chungnam.go.kr/healthenvMain.do" target="_blank" rel="noopener noreferrer" title="충청남도 보건환경연구원 [새창]">충청남도 보건환경연구원</a></li>
+                                            <li><a href="http://jihe.jeonbuk.go.kr/" target="_blank" rel="noopener noreferrer" title="전라북도 보건환경연구원 [새창]">전라북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.jihe.go.kr/" target="_blank" rel="noopener noreferrer" title="전라남도 보건환경연구원 [새창]">전라남도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gb.go.kr/Main/open_contents/section/inhen/index.html" target="_blank" rel="noopener noreferrer" title="경상북도 보건환경연구원 [새창]">경상북도 보건환경연구원</a></li>
+                                            <li><a href="http://www.gyeongnam.go.kr/knhe/index.gyeong" target="_blank" rel="noopener noreferrer" title="경상남도 보건환경연구원 [새창]">경상남도 보건환경연구원</a></li>
+                                            <li><a href="http://hei.jeju.go.kr/" target="_blank" rel="noopener noreferrer" title="제주특별자치도 보건환경연구원 [새창]">제주특별자치도 보건환경연구원</a></li>
+                                            <li><a href="https://www.sejong.go.kr/vri.do" target="_blank" rel="noopener noreferrer" title="세종시 보건환경 연구원 [새창]">세종시 보건환경 연구원</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#none"><span>관련기관 </span><em>바로가기</em></a>
+                                    <div>
+                                        <ul>
+                                            <li><a href="https://kosis.kr/covid/covid_index.do" target="_blank" rel="noopener noreferrer" title="통계청 코로나19 [새창]">통계청 코로나19</a></li>
+                                        </ul>
+                                    </div>
+                                </li>                                
+                            </ul>
+
+                        </div>
+                    </div>
+            	</div>
+            </div>
+            <div class="f_bottom">
+                <div>
+                    <div class="fb_left">
+                        <div class="f_navigation">
+                            <ul>
+                                <li class="txt_private"><strong>신고상담</strong></li>
+                                <li>보건소</li>
+                                <li class="cdcinfo">질병관리청 콜센터 1339</li>
+                                <li>지역번호 + 120</li>
+                                <li>지역번호 + 114</li>
+                            </ul>
+                        </div>
+                        <div class="f_copyright">
+                            <p>Copyright ⓒ By MOHW. All Rights Reserved.</p>
+                        </div>
+                    </div>
+					 <div class="fb_right">					 	
+                         <div class="f_web">
+                             <a href="http://www.webwatch.or.kr/Situation/WA_Situation.html?MenuCD=110" target="_blank" rel = "noopener noreferrer" title="webwatch 사이트 이동 - 새창"><span><img src="../static/image/footer/web_accessibility_img.png" alt="과학기술정보통신부 WEB ACCESSIBILITY 마크(웹접근성 품질인증 마크)"></span></a>
+                         </div>
+                        <div class="f_open">
+							<a href="http://www.kogl.or.kr/" target="_blank" title="OPEN 공공누리 공공저작물 자유이용허락 사이트 이동 - 새창"><span class="hdn">OPEN 공공누리 공공저작물 자유이용허락</span></a>
+						</div>
+					 </div>                    
+                </div>
+            </div>
+        </div>
+
+		<a href="#header" class="btn_top" style="display: none;"><span class="hdn">상단으로 이동</span></a>
+
+		<div class="body_bg"></div>
+<script>
+    function reverseHtmlTitle() {
+        var titleStr = $(document).attr("title");
+
+        var resultStr = "";
+        var titleArr = titleStr.split(">");
+        for(var i = titleArr.length-1; i >= 0; i--) {
+            resultStr += $.trim(titleArr[i]);
+            if(i !== 0) {
+                resultStr += " < "
+            }
+        }
+        $(document).attr("title", resultStr);
+    }
+
+    $(function() {
+        reverseHtmlTitle();
+    });
+</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159814989-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159814989-1');
+</script>
+<script type="text/javascript">
+    (function(w, d, a){
+        w.__beusablerumclient__ = {
+            load : function(src){
+                var b = d.createElement("script");
+                b.src = src; b.async=true; b.type = "text/javascript";
+                d.getElementsByTagName("head")[0].appendChild(b);
+            }
+        };w.__beusablerumclient__.load(a);
+    })(window, document, "//rum.beusable.net/script/b210810e114904u843/2f7b84ef24");
+</script>
+	</div>
+</body>
+</html>

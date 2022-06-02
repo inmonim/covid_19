@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Blank</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+
+    <style>
+        .main_cell {
+            color:rgb(41, 41, 41);
+            background-color: rgb(241, 238, 255);
+            text-align:center;
+            border-top: 1px solid rgb(68, 68, 68);
+            border-right: 1px hidden rgb(68, 68, 68);
+            border-bottom: 1px solid rgb(68, 68, 68);
+
+        }
+        .text_cell {
+            color:rgb(41, 41, 41);
+            border-top: 1px solid rgb(68, 68, 68);
+            border-bottom: 1px solid rgb(68, 68, 68);
+            vertical-align: middle;
+        }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon rotate-n-15">
+                    <i class="fas fa-laugh-wink"></i>
+                </div>
+                <div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTwo"
+                    aria-expanded="true" aria-controls="collapseTwo">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Components</span>
+                </a>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-fw fa-wrench"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="collapseUtilities" class="collapse" aria-labelledby="headingUtilities"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item active">
+                <a class="nav-link" href="#" data-toggle="collapse" data-target="#collapsePages" aria-expanded="true"
+                    aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-folder"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse show" aria-labelledby="headingPages"
+                    data-parent="#accordionSidebar">
+                    <div class="bg-white py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item active" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Charts</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Tables</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-primary">
+                                            <i class="fas fa-file-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-success">
+                                            <i class="fas fa-donate text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="mr-3">
+                                        <div class="icon-circle bg-warning">
+                                            <i class="fas fa-exclamation-triangle text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter">7</span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Message Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_1.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div class="font-weight-bold">
+                                        <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                            problem I've been having.</div>
+                                        <div class="small text-gray-500">Emily Fowler · 58m</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_2.svg"
+                                            alt="...">
+                                        <div class="status-indicator"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">I have the photos that you ordered last month, how
+                                            would you like them sent to you?</div>
+                                        <div class="small text-gray-500">Jae Chun · 1d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="img/undraw_profile_3.svg"
+                                            alt="...">
+                                        <div class="status-indicator bg-warning"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Last month's report looks great, I am very happy with
+                                            the progress so far, keep up the good work!</div>
+                                        <div class="small text-gray-500">Morgan Alvarez · 2d</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#">
+                                    <div class="dropdown-list-image mr-3">
+                                        <img class="rounded-circle" src="https://source.unsplash.com/Mv9hjnEUHR4/60x60"
+                                            alt="...">
+                                        <div class="status-indicator bg-success"></div>
+                                    </div>
+                                    <div>
+                                        <div class="text-truncate">Am I a good boy? The reason I ask is because someone
+                                            told me that people say this to all dogs, even if they aren't good...</div>
+                                        <div class="small text-gray-500">Chicken the Dog · 2w</div>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
+                                <img class="img-profile rounded-circle"
+                                    src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Profile
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Settings
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Activity Log
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Logout
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                    
+                    <!-- Page Heading -->
+                    <div id="content" style="padding:50px 0px 50px 50px; width:65%; color:rgb(41,41,41);"><!-- main_container -->
+                        <div>
+                            <h1>코로나19 란?</h1>
+                            <!-- s: content -->
+                            <p style="text-align:right">* 현재까지 알려진 정보(2021년 3월 2일 기준) </p>
+                            <hr style="border: solid 1px;">
+                            <h3 style="padding-top:20px; padding-bottom:20px">◈ 코로나바이러스감염증-19(COVID-19) 정보</h3>
+                            
+                            <br>
+                        </div>
+                            <div>
+                            <table>
+                                <caption>
+                                <span>코로나바이러스감염증-19 기본정보표 - 병원체, 전파 경로, 잠복기, 진단 기준, 증상, 치료, 치명률, 예방으로 구성</span>
+                                </caption>
+                                <colgroup>
+                                <col style="width:10%;">
+                                <col style="width:90%;">
+                                </colgroup>
+                                    <tr>
+                                    <th class='main_cell'>병원체</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>Severe Acute Respiratory Syndrome-Coronavirus-2(SARS-CoV-2)</li>
+                                        <li>Coronaviridae family, Betacoronavirus genus Sarbecovirus subgenus에 속함</li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>전파 경로</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>주된 전파경로는 감염자의 호흡기 침방울(비말)에 의한 전파</li>
+                                        <li>사람 간에 전파되며, 대부분의 감염은 감염자가 기침, 재채기, 말하기, 노래 등을할 때 발생한 호흡기 침방울(비말)을다른사람이 밀접접촉(주로 2m 이내)하여 발생</li>
+                                        <li>현재까지 연구결과에 의하면, 비말 이외, 표면접촉*, 공기 등을 통해서도 전파가 가능하나, 공기전파는 의료기관의에어로졸 생성 시술**, 밀폐된공간에서 장시간 호흡기 비말을 만드는환경***등 특정 환경에서 제한적으로 전파되는 것으로 알려짐
+                                        <p class="mgt12">* 감염된 사람과의 직접 접촉(악수 등) 또는 매개체(오염된 물품이나 표면)를 만진 후, 손을 씻기 전 눈, 코, 입 등을 만짐으로 바이러스 전파 </p>
+                                        <p class="mgt8">** 에어로졸 생성 시술: 기관지 내시경 검사, 객담 유도, 기관삽관, 심폐소생술, 개방된 객담 흡입, 흡입기 등</p>
+                                        <p class="mgt8">*** 환기가 부적절하게 이루어진 노래방, 커피숍, 주점, 실내 운동시설 등에서 감염자와 같이있거나 감염자가 떠난 즉시 그 밀폐공간을 방문한 경우</p>
+                                        </li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>잠복기</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>1~14일(평균 5~7일)</li> 
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>진단 기준</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>환자 : 임상양상에 관계없이 진단을 위한 검사기준에 따라 코로나19 감염이 확인된 자</li>
+                                        <li>진단을 위한 검사 기준
+                                        <ul>
+                                            <li>코로나19 유전자(PCR) 검출</li>
+                                            <li>바이러스 분리</li>
+                                        </ul>
+                                        </li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>증상</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>주요증상 및 징후
+                                        <ul>
+                                            <li>- 임상 증상은 무증상, 경증, 중등증, 중증까지 다양</li>
+                                            <li>- 주요 증상으로는 발열(37.5℃ 이상), 기침, 호흡곤란, 오한, 근육통, 두통, 인후통, 후각·미각소실
+                                            <p>- 그 외에 피로, 식욕감소, 가래, 소화기증상(오심, 구토, 설사 등), 혼돈, 어지러움, 콧물이나 코막힘, 객혈, 흉통, 결막염, 피부 증상 등이 다양하게 나타남</p>
+                                            </li>
+                                        </ul>
+                                        </li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>치료</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>특이치료제는 없으며 증상에 따른 해열제, 수액공급, 진해제 등 대증치료</li>
+                                        <li>호흡 곤란 시 산소를 공급하고 필요한 경우에는 기계호흡이나 체외막 산소공급 등의 처치를 시행</li>
+                                        <li>산소 치료가 필요한 환자에서 렘데시비르의 효과가 일부 확인되어 우리나라를 포함한 여러 나라에서 긴급 승인이 되었거나, 긴급 승인을 준비 중임특이적인 항바이러스제 없음</li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>치명률</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>전세계 치명률은 지역, 인구집단연령 구조, 감염 상태 및 기타 요인에 의해 0.1~25%로 다양함</li>
+                                        <li>전세계 치명률은 0.00%~1.63% (중위값 0.27%)로 보정 후 0.00~1.54%(중위값 0.23%)(Bulletin of the World Health Organization. 2021)(https://www.who.int/bulletin/volumes/99/1/20-265892/en/)</li>
+                                        </ul></td>
+                                    </tr>
+                                    <tr>
+                                    <th class='main_cell'>예방</th>
+                                    <td class='text_cell'><ul class="s_listin_mdot mgt0" style="margin-top: 12px; margin-right: 12px">
+                                        <li>식약처에서 승인된 코로나19 백신(향후 업데이트 예정)</li>
+                                        <li>올바른 손씻기</li>
+                                        <li>기침 예절 준수</li>
+                                        <li>씻지 않은 손으로 눈, 코, 입 만지지 않기</li>
+                                        <li>주위 환경을 자주 소독하고 환기하기</li>
+                                        </ul></td>
+                                    </tr>
+                            </table>
+                            </div>
+                            <hr style="margin-top:60px; margin-bottom:30px">
+                            <h3 style="padding-bottom: 20px; color:rgb(62, 62, 165);">코로나 바이러스 분류 및 특성</h3>
+                            <br>
+                            <div style="padding-left:15px">
+                            <h5 >개요</h5>
+                            <ul class="s_listin_dot">
+                                <li>코로나 바이러스(CoV)는 사람과 다양한 동물에 감염될 수 있는 바이러스로서 유전자 크기 27~32kb의 RNA 바이러스</li>
+                            </ul>
+                            <h5 class="s_title_in3">분류</h5>
+                            <ul class="s_listin_dot">
+                                <li>코로나 바이러스과에는 4개의 속(알파, 베타, 감마, 델타)이 있음
+                                    <ul type="square">
+                                        <li>알파 &middot; 베타 : 사람과 동물에게 감염</li>
+                                        <li>감마 &middot; 델타 : 동물에게 감염</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <h5 class="s_title_in3">형태</h5>
+                            <ul class="s_listin_dot">
+                                <li>형태는 코로나 바이러스의 명명과 같이 전자현미경 관찰시 구형
+                                    <ul class="s_listin_bar">
+                                        <li>외부 spike 단백질이 특징적인 크라운형태</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            
+                            <h5 class="s_title_in3">사람감염 코로나 바이러스</h5>
+                            <ul class="s_listin_dot">
+                                <li>사람감염 코로나 바이러스는 현재까지 6종류가 알려져 있음
+                                    <ul class="s_listin_bar">
+                                        <li>감기를 일으키는 유형(229E, OC43, NL63, HKU1)</li>
+                                        <li>중증폐렴을 일으킬 수 있는 유형(SARS-CoV, MERS-CoV) </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            </div>
+                            <br>
+                        <div>
+                                    <h6 style="padding-left: 10px; color:rgb(85, 85, 85)">코로나 바이러스 분류표</h6>
+                                <div class="data_table tbl_scrl tbl_scrl_m">
+                                <table>
+                                    <caption>
+                                        <span class="hdn">코로나 바이러스 분류표 - 속, 사람-코로나 바이러스, 사람 이외에 감염하는 코로나 바이러스로 구성</span>
+                                    </caption>
+                                    <colgroup>
+                                        <col style="width:20%">
+                                        <col style="width:20%">
+                                        <col style="width:60%">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" style="border-top:1.5px solid rgb(0,0,0); border-right:1px solid rgb(155,155,155); padding:18px">속(genus)</th>
+                                            <th scope="col" style="border-top:1.5px solid rgb(0,0,0); border-right:1px solid rgb(155,155,155); padding:18px">사람-코로나 바이러스</th>
+                                            <th scope="col" style="border-top:1.5px solid rgb(0,0,0); padding:18px">사람 이외에 감염하는 코로나 바이러스</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td style="border-top:2px solid rgb(0,0,0); border-right:1px solid rgb(155, 155, 155); padding:18px">알파-코로나 바이러스(alphacoronavirus)</td>
+                                            <td style="border-top:2px solid rgb(0,0,0); border-right:1px solid rgb(155, 155, 155); padding:18px">229E, NL63,</td>
+                                            <td class="ta_l" scope="col" style="border-top:2px solid rgb(0,0,0); padding:18px">
+                                                돼지 유행성 설사 바이러스(porcine epidemic diarrhea virus : PEDV), 
+                                                (돼지) 전염성 위장염 바이러스 (transmissible gastroenteritis virus : TGEV), 
+                                                개코로나 바이러스(canine coronavirus : CCoV), 고양이 코로나 바이러스
+                                                (feline coronavirus : FCoV), Miniopterus bat(박쥐) coronavirus 1,
+                                                Miniopterus bat(박쥐) coronavirus HKU8, Rhinolophus bat(박쥐) coronavirus HKU2, Scotophilus bat(박쥐) coronavirus 512   
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); padding:18px">베타-코로나 바이러스(betacoronavirus)</td>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); padding:18px">OC43, HKU1, SARS-CoV, MERS-CoV</td>
+                                            <td class="ta_l" scope="col" style="border-top:1px solid rgb(155, 155, 155); padding:18px">
+                                                돼지 혈구 응집성뇌척수염 바이러스(porcine hemagglutinating encephalomyelitis virus : PHEV), 우코로나 바이러스(bovine coronavirus : BCoV), 말코로나 바이러스
+            (equine coronavirus : EqCoV), 쥐코로나 바이러스(murine coronavirus : MuCoV),Tylonycteris bat(박쥐) coronavirus HKU4, Pipistrellus bat(박쥐) coronavirus HKU5,Rousettus bat(박쥐) coronavirus HKU9 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); padding:18px">감마-코로나 바이러스(gammacoronavirus)</td>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); padding:18px">없음</td>
+                                            <td class="ta_l" scope="col" style="border-top:1px solid rgb(155, 155, 155); padding:18px">새코로나 바이러스(Avian coronavirus),흰색 돌고래(Beluga whale)-코로나 바이러스 SW1 </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); border-bottom:1px solid rgb(155, 155, 155); padding:18px">델타-코로나 바이러스(deltacoronavirus)</td>
+                                            <td style="border-top:1px solid rgb(155, 155, 155); border-right:1px solid rgb(155, 155, 155); border-bottom:1px solid rgb(155, 155, 155);padding:18px">없음</td>
+                                            <td class="ta_l" scope="col" style="border-top:1px solid rgb(155, 155, 155); border-bottom:1px solid rgb(155, 155, 155); padding:18px">제주직박구리(Bulbul)-코로나 바이러스 HKU11,
+            개똥지빠귀(Thrush)-코로나 바이러스 HKU12,
+            킨바라(Munia)-코로나 바이러스 HKU13 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </div>
+                                
+                                <p style="color:orangered; margin-bottom:-5px;">* 포유류, 조류 등 광범위 동물 감염(개, 고양이, 소, 돼지, 말, 닭, 쥐, 박쥐, 돌고래 등) </p>
+                                <p style="color:orangered;">* 박쥐 CoV는 알파 CoV 또는 베타 CoV에 속함</p>
+                                <div style="background-color:rgb(230, 230, 230); padding:3px">
+                                <h3 style="padding-left:20px; padding-top:60px; padding-bottom: 20px; color:rgb(34, 34, 83);">코로나 바이러스 전자현미경 형태</h3>
+                                <div class="container-fluid" >
+                                    <div class="row">
+                                        <div class="col-xs-4"><img src="./img/co_info_img_01.png" style="width:300px; height:300px; margin:15px;"></div>
+                                        <div class="col-xs-4"><img src="./img/co_info_img_02.png" style="width:300px; height:300px; margin:15px;"></div>
+                                        <div class="col-xs-4"><img src="./img/co_info_img_03.png" style="width:300px; height:300px; margin:15px;"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-4" style="font-size:20px; width:300px; margin:15px;">MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC)</div>
+                                        <div class="col-xs-4" style="font-size:20px; width:300px; margin:15px;">MERS-CoV/KOR/KNIH/002_05_2015의 투과전자현미경 사진 (KCDC))</div>
+                                        <div class="col-xs-4" style="font-size:20px; width:300px; margin:15px;">SARS-CoV(N Engl J Med. 2003; 348(20):1948-51)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating" style="height:500px; width:400px">
+                            
+                        </div>
+                <!-- /.container-fluid -->
+
+                  </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Your Website 2020</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+</body>
+
+</html>

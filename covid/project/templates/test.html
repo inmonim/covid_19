@@ -1,0 +1,25 @@
+{% load static %}
+
+<div id="testImg">
+    <img src="{% static 'img/hospi.jpg' %}" width="700" height="350" alt="테스트이미지" />
+    <button style="background-color: white;" class="btn1" type="button" onclick="javascript:sensorBtnClick('btn1');">서울</button>
+    <button class="btn2" type="button" onclick="javascript:sensorBtnClick('btn2');">버튼2</button>
+  </div>
+
+  <style>
+    #testImg{
+      position : relative;
+      width: 700px;
+      height: 350px;
+    }
+    button.btn1 {
+      position: absolute;
+      top: 170px;
+      left : 35px; 
+    }
+    button.btn2 {
+      position: absolute;
+      top: 85px;
+      left : 95px;
+    }
+    </style>

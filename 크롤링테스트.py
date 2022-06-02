@@ -153,18 +153,3 @@ if response.status_code == 200:
 
 else:
     print(response.status_code)
-
-일일확진자 = DeLlist
-일일사망자 = krdeadlist
-인구10만명당확진자 = De10list
-인구10만명당사망자 = krdead10list
-
-for i in range(0,len(daylist)):
-    stmt = f'''
-    INSERT INTO 코로나19주요데이터 (날짜, 날짜별확진자, 날짜별사망자, 날짜별10만명당확진자, 날짜별10만명당사망자) VALUE
-    (
-    '{str(daylist[i])}', '{str(일일확진자[i])}', '{str(일일사망자[i])}', '{str(인구10만명당확진자[i])}', '{str(인구10만명당사망자[i])}'
-    )
-    '''
-    Co.execute(text(stmt))
-
